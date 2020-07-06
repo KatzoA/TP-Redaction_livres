@@ -28,6 +28,20 @@ public class Main {
         // affichage du sommaire via foreach lambda
         /*chapitres.forEach(chapitre -> System.out.println(chapitre));*/
 
+        // chapitre 1
+        List<String> chapitre1 = new ArrayList<>();
+        chapitre1.add("Bienvenue sur le premier chapitre");
+
+        // chapitre 2
+        List<String> chapitre2 = new ArrayList<>();
+        chapitre2.add("Bienvenue sur le premier deux");
+
+        // creer une nouvelle instance du livre
+        Livre livre = new Livre("Les bases de la programmation");
+        livre.ajouterPage(chapitre1);
+        livre.ajouterPage(chapitre2);
+        System.out.println(livre.getNom() + " nombres de pages " + livre.getNombrePages());
+
 
     }
 }
