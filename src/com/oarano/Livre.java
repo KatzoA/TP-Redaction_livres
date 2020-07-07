@@ -29,5 +29,9 @@ public class Livre {
     public String getNom(){
         return nomLivre;
     }
+
+    public List<String> getPage(int numeroPage){
+    return page.get(numeroPage).getLigne();
+    }
 }
 
